@@ -1,0 +1,21 @@
+.MainInfo{
+    background-color: white;
+    border-radius: 10px;
+   
+
+}
+.country{
+    font-size: 1.3em;
+    font-weight: bold;
+    text-decoration: underline;
+}
+img{
+    width: 100px;
+}
+
+li{
+    list-style: none;
+}
+.map{
+padding-bottom: 7%;
+}

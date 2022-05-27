@@ -45,22 +45,21 @@ const handleChangeCity=(city)=>{
 }
 
   return (
-    <div className="App">
+    <div className="App container">
       
-     <button onClick={loadInfo}>click</button>
-      <div>
+     
+     
       {/* {data?.current.cloud} */}
       <Form onChangeCity={handleChangeCity}/>
-      </div>
+      
+      <br/>
       <div>
       {data? 
         <MainInfo weather={data}/>
       :null}
       </div>
      
-        {data?
-      <iframe className="iframe" src={`https://maps.google.com/?ll=${data.location.lat},${data.location.lon}7&z=10&t=m&output=embed`} height="600" width="800" style={{border:0}} allowfullscreen  aria-hidden="false" tabindex="0"></iframe>
-         :null}
+       
       
     </div>
 

@@ -1,5 +1,5 @@
 import React,{useState} from "react";
-
+import "./Form.css"
 const Form =({onChangeCity})=>{
 const [city,setCity]=useState(null)
 
@@ -15,12 +15,12 @@ const handleSubmit=(e)=>{
   }
 
 return(
-    <>
-    <form onSubmit={handleSubmit}>
-        <input type="text" onChange={handleChange} />
-        <button>Buscar</button>
+    
+    <form className="row" onSubmit={handleSubmit}>
+        <input className="col-10" type="text" onChange={handleChange} />
+        <button className="col-2">Buscar</button>
     </form>
-    </>
+    
 )
 
 }
